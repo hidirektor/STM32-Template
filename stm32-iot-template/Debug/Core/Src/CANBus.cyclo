@@ -1,0 +1,3 @@
+../Core/Src/CANBus.c:11:19:CANBus_Init	1
+../Core/Src/CANBus.c:16:19:CANBus_Transmit	1
+../Core/Src/CANBus.c:24:19:CANBus_Receive	2

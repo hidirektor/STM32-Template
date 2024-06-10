@@ -1,0 +1,3 @@
+../Core/Src/EEPROM.c:11:19:EEPROM_Init	24	static
+../Core/Src/EEPROM.c:17:19:EEPROM_Write	40	static
+../Core/Src/EEPROM.c:21:19:EEPROM_Read	40	static

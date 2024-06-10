@@ -1,0 +1,2 @@
+../Core/Src/OTA.c:24:6:OTA_FlashWrite	40	static
+../Core/Src/OTA.c:35:6:OTA_CheckForUpdate	2840	static

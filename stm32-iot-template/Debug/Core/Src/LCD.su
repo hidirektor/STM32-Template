@@ -1,0 +1,15 @@
+../Core/Src/LCD.c:16:6:lcd_send_cmd	32	static
+../Core/Src/LCD.c:42:6:lcd_send_data	32	static
+../Core/Src/LCD.c:69:6:lcd_send_string	16	static
+../Core/Src/LCD.c:75:6:lcd_send_char	32	static
+../Core/Src/LCD.c:101:6:lcd_init	8	static
+../Core/Src/LCD.c:109:6:lcd_gotoxy	16	static
+../Core/Src/LCD.c:117:6:lcd_print	16	static
+../Core/Src/LCD.c:122:6:lcd_print_char	16	static
+../Core/Src/LCD.c:127:6:lcd_clear	8	static
+../Core/Src/LCD.c:132:6:lcd_clear_line	16	static
+../Core/Src/LCD.c:142:6:lcd_delete_char	16	static
+../Core/Src/LCD.c:148:6:lcd_line1	8	static
+../Core/Src/LCD.c:152:6:lcd_line2	8	static
+../Core/Src/LCD.c:156:6:lcd_backlight	16	static
+../Core/Src/LCD.c:161:6:lcd_cursor	16	static
