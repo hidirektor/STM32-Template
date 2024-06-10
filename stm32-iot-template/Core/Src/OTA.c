@@ -8,7 +8,7 @@
 #include "OTA.h"
 #include "EEPROM.h"
 #include "ESP8266.h"
-#include "Globals.h"
+#include "globals.h"
 #include "LCD.h"
 
 #include <string.h>
@@ -53,7 +53,7 @@ void OTA_CheckForUpdate(void) {
         // Parse new version from response
         // For example, parse actual version from response
         strcpy(newVersion, "1.1.0");
-        EEPROM_Write(&heeprom, 0x0000, (uint8_t *)newVersion, strlen(newVersion) + 1);
+        EEPROM_SaveData(&heeprom, 0x0000, (uint8_t *)newVersion, strlen(newVersion) + 1);
 
         // Display update message on LCD
         lcd_clear();
@@ -80,7 +80,7 @@ void OTA_CheckForUpdate(void) {
         }
 
         // Verify and finalize the update
-        EEPROM_Write(&heeprom, 0x0000, (uint8_t *)newVersion, strlen(newVersion) + 1);
+        EEPROM_SaveData(&heeprom, 0x0000, (uint8_t *)newVersion, strlen(newVersion) + 1);
 
         // Display completion message on LCD
         lcd_clear_line(2);

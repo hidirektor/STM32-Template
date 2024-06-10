@@ -15,5 +15,6 @@ extern char newVersion[10];
 extern const char *checkVersionURL;
 extern const char *downloadNewVersionURL;
 
+extern uint8_t defaultData[110];
 
 #endif /* INC_GLOBALS_H_ */

@@ -1,3 +1,5 @@
-../Core/Src/EEPROM.c:11:19:EEPROM_Init	1
-../Core/Src/EEPROM.c:17:19:EEPROM_Write	1
-../Core/Src/EEPROM.c:21:19:EEPROM_Read	1
+../Core/Src/EEPROM.c:10:19:EEPROM_Init	1
+../Core/Src/EEPROM.c:16:19:EEPROM_Write	1
+../Core/Src/EEPROM.c:20:19:EEPROM_Read	1
+../Core/Src/EEPROM.c:24:19:EEPROM_SaveData	1
+../Core/Src/EEPROM.c:28:19:EEPROM_FillData	3

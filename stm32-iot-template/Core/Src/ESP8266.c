@@ -5,13 +5,17 @@
  *      Author: hidirektor
  */
 
-
 #include "ESP8266.h"
+
 #include <string.h>
 
-HAL_StatusTypeDef ESP8266_Init(ESP8266_HandleTypeDef *esp, UART_HandleTypeDef *huart) {
+HAL_StatusTypeDef ESP8266_Init(ESP8266_HandleTypeDef *esp, UART_HandleTypeDef *huart, ESP8266_Mode mode) {
     esp->huart = huart;
-    return HAL_OK;
+    esp->mode = mode;
+
+    char cmd[20];
+    snprintf(cmd, sizeof(cmd), "AT+CWMODE=%d\r\n", mode);
+    return ESP8266_SendCommand(esp, cmd);
 }
 
 HAL_StatusTypeDef ESP8266_SendCommand(ESP8266_HandleTypeDef *esp, const char *cmd) {

@@ -1,10 +1,10 @@
 ../Core/Src/main.c:50:6:Bootloader_JumpToApplication	24	static,ignoring_inline_asm
 ../Core/Src/main.c:58:6:Bootloader_Main	8	static
 ../Core/Src/main.c:72:5:main	8	static
-../Core/Src/main.c:128:6:SystemClock_Config	72	static
-../Core/Src/main.c:168:13:MX_CAN_Init	8	static
-../Core/Src/main.c:193:13:MX_I2C1_Init	8	static
-../Core/Src/main.c:214:13:MX_TIM1_Init	32	static
-../Core/Src/main.c:248:13:MX_USART1_UART_Init	8	static
-../Core/Src/main.c:269:13:MX_GPIO_Init	24	static
-../Core/Src/main.c:284:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:131:6:SystemClock_Config	72	static
+../Core/Src/main.c:171:13:MX_CAN_Init	8	static
+../Core/Src/main.c:196:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:217:13:MX_TIM1_Init	32	static
+../Core/Src/main.c:251:13:MX_USART1_UART_Init	8	static
+../Core/Src/main.c:272:13:MX_GPIO_Init	24	static
+../Core/Src/main.c:287:6:Error_Handler	4	static,ignoring_inline_asm

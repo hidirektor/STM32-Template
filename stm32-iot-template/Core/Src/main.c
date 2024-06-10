@@ -100,10 +100,19 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
   EEPROM_Init(&heeprom, &hi2c1, 0xA0);
-  ESP8266_Init(&hesp8266, &huart1);
+
+  if (EEPROM_FillData(&heeprom, 0x0000, defaultData, sizeof(defaultData)) != HAL_OK) {
+	  // Handle EEPROM error
+      Error_Handler();
+  }
+
+  if (ESP8266_Init(&hesp8266, &huart1, ESP8266_MODE_STATION) != HAL_OK) {
+      // Handle ESP8266 error
+      Error_Handler();
+  }
   CANBus_Init(&hcanbus, &hcan);
 
-  lcd_init();  // Initialize the LCD
+  lcd_init();  // Initialize LCD
   lcd_clear();
 
   Bootloader_Main();

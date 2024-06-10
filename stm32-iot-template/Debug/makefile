@@ -60,8 +60,8 @@ all: main-build
 main-build: stm32-iot-template.elf secondary-outputs
 
 # Tool invocations
-stm32-iot-template.elf stm32-iot-template.map: $(OBJS) $(USER_OBJS) /Users/hidirektor/STM32CubeIDE/workspace_1.15.0/stm32-iot-template/STM32F103RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "stm32-iot-template.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/Users/hidirektor/STM32CubeIDE/workspace_1.15.0/stm32-iot-template/STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32-iot-template.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+stm32-iot-template.elf stm32-iot-template.map: $(OBJS) $(USER_OBJS) /Users/hidirektor/Documents/GitHub/STM32-Template/stm32-iot-template/STM32F103RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "stm32-iot-template.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/Users/hidirektor/Documents/GitHub/STM32-Template/stm32-iot-template/STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32-iot-template.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
