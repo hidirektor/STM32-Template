@@ -56,9 +56,7 @@ void Bootloader_JumpToApplication(void) {
 }
 
 void Bootloader_Main(void) {
-    // Check for update trigger condition, e.g., a specific pin state or EEPROM flag
-    // If update condition is met, handle OTA update
-    // Otherwise, jump to the main application
+    // update check section
     OTA_CheckForUpdate();
     Bootloader_JumpToApplication();
 }
